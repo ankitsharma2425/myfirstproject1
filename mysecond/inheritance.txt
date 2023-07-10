@@ -1,0 +1,67 @@
+inheritance
+interfaces 
+abstract classes
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Inheritance :- a class inherited into another(inheriting features of class to another class) ,,when there is similarity or common things adn classfication, identify those common things and except constructor everything can be inherited in the class(employee is (parent class, base class, super class))|||(Trainer , jr.developer,sr.associate are child class, subclass
+--------------------------------------------------------------------------------------
+In java one program can inherite only one class 
+
+format:-
+class trainer extends Employee      ////(all the members of parents will become member of child class)
+
+the first line in the child class constructor should be super
+
+What does super means?
+super represents parent class constructor(invoke of constructor of patrent class)
+----------------------------------------------------------------------------------------
+format:-
+class Employee{
+}
+class trainer extends Employee       ///(all the members of parents will become member of child class)///
+
+{
+  }
+Trainer t =new Trainer ();
+t.(here we created the object of child class but the constructor of parent class will automatically get invoked)
+
+we can modify parent class from child class using override keyword 
+we cannot override final methods.(capital O)
+we cannot inherit final class
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Abstract class:-such a method without code or body and atleast one or many methods it should have.
+write the class as  abstract keyword and method should also have abstract keyword
+abstract class cannot be instantiated ,the major purpose of abstract class is for inheritance and the most important thing child will write the code for it.
+
+Parent obj = new child();   ///(child can access properties of parent class but parent cannot access in normal inheritance)
+
+it can have methods without body but also at the same time it also have methods with the body
+
+for a abstract method dont use flower bracket if we use thses bracket then it means that method have some body .
+
+abstract class cannot be intantiated
+
+
+parent class cannot inhr
+
+
+why abstract classes?
+
+so that each classes  have their own implementation.
+
+abstract can have concrete methods as well as abstract method also.
+
+in interface,none of the body have any body it refers to
+
+java allows single inheritance for classes but it allow multiple inheritance for interface
+
+if final keyword is use in anything no one can modify it
+final classes canniot be inheritance
+final methods cannot allow child class to modify parent class
+we can not create instances for interfaces and abstract classes
+
+(collection- + file handling + class + object will remain shape in csharp) 
+
+for interface keyword will be interface
+
+Q1.interface area void , void calculate area inherit into circle and sqaure classes and execute

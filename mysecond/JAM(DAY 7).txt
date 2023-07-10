@@ -1,0 +1,125 @@
+JAM(DAY 7)
+============================================================================================================
+1. CREATE TABLE TABLE NAME??
+WHAT DOES THIS TABLE STATEMENT DO
+
+ans.the "CREATE TABLE" statement is used in SQL to create a new table in a database. 
+=======================================================================================================
+2.SELECT * FROM PERSON
+WHERE CITY IN('DELHI','PUNE','CHENNAI','HYDERABAD')
+WHAT DOES THIS ABOVE STATEMENT DOES
+
+Ans.The above SQL statement performs a query on a table named "PERSON" and retrieves all rows where the value in the "CITY" column matches any of the specified cities: Delhi, Pune, Chennai, or Hyderabad
+=====================================================================================================
+3.SELECT * FROM PERSON 
+WHERE CITY = SELECT CITY FROM PERSON
+                WHERE NME ='ALOK'
+WHAT DOES THE ABOVE STATEMENT DO
+
+Ans.the statement will return all rows from the "PERSON" table where the city matches the city of the person named 'ALOK'.
+=============================================================================================================
+
+4.SELECT * FROM PERSON 
+ WHERE NAME  LIKE '%SON'
+  WHAT DOES ABOVE STATEMENT DO
+
+ans.The provided SQL statement retrieves all columns from the "PERSON" table where the name ends with "SON".
+================================================================================================================
+5.WHICH JOIN IS A CARTESIAN PRODUCT?
+
+Ans.A Cartesian product, also known as a cross join, is a type of join that combines each row from one table with every row from another table. It results in a combination of all possible rows between the two tables involved in the join. 
+========================================================================================================
+6. WHICH JOIN, THE SAME TABLE JOINS IT WITH ITSELF
+
+It is known as a self-join. A self-join is a specific type of join where a table is treated as two separate instances and is joined based on a relationship between the columns within the same table.
+=======================================================================================================
+8.WHICH JOIN RETRIVES ALL THE RECORDS  FROM THE LEFT TABLE AND ONLY MATCHING ROWS FROM RIGHT TABLE
+
+left join or left outer join.
+======================================================================================================
+9.PRIMARY IS EQUAL TO
+unique and not null (not even duplicate)
+============================================================================================================
+10. which of the following is a logical operator
+ALL
+AND
+ANY
+None
+Ans.the logical operator is "AND."
+==================================================================================================================
+11. which clause should be used to retrieve non duplicate values
+LIKE
+ALL
+Disctinct
+ANY
+
+ANs. "DISTINCT" clause
+================================================================================================================================================
+12. select count(Empid) from Employees
+what does the above command does
+
+Ans.The above SQL command calculates and returns the count of the "Empid" column in the "Employees" table.
+=====================================================================================================================
+13. A query typed in the where clause of another query is called as 
+ANs   subquery or a nested query.
+=========================================================================================================================
+14. How to write a condition on a group by clause
+
+The HAVING clause 
+=================================================================================================================================
+15. select * from Employee
+    order by firstname asc
+what is the result of the query
+
+ans. retrieves all columns from the "Employee" table and orders the result in ascending order based on the "firstname" column.
+===================================================================================================================================
+16. What is a database
+ans.   A database is an organized collection of data stored and managed in a structured manner. It is designed to efficiently store, retrieve, and manage large amounts of information
+=====================================================================================================================================
+17. How to create a database
+
+CREATE DATABASE database_name;
+=====================================================================================================================================
+
+18. how to use a database
+
+Ans.USE database_name;
+========================================================================================================================================
+19. how to drop a database
+
+Ans.DROP DATABASE database_name;
+=====================================================================================================================================
+20. what is DDL stands for
+
+Ans~DDL stands for "Data Definition Language
+=============================================================
+21. Drop table tablename
+what does the above command do
+
+The command DROP TABLE tablename is a Data Definition Language (DDL) statement used to delete or remove a table from a database.
+==========================================================================
+22. alter table Student Add(Address varchar(20))
+what does above statement does
+
+Ans.Used to modify the structure of an existing table named "Student" by adding a new column called "Address."
+======================================================================================
+23. What happens when no values is inserted into a column of a table
+
+When no values are inserted into a column of a table, the column will typically contain a default value or a null value, depending on how the table is defined.
+
+24. What does the following code snippet do?
+DELETE FROM STUDENTS 
+WHERE AGE = 16;  
+ROLLBACK;
+what happens in the above command
+
+ANs.ROLLBACK statement, the deletion of the rows where age is 16 will be canceled, and the original records will remain unchanged in the "STUDENTS" table.
+
+25.Which of the following commands are used to put a restriction on the number of rows returned from a query?
+LIKE
+LIMIT
+WHERE
+GROUP BY
+
+ANS."LIMIT" command
+

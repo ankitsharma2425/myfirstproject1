@@ -1,0 +1,139 @@
+Q.1.  _____ are foundational elements that are used to design, deploy and management .
+
+ANS~~ Architecture
+      Infrastructure
+      Operating System
+      NetworkSecurity
+      Monitoring and Logging
+      Deployment and Configuration Management
+      Documentation
+
+===========================================================================================================================================================
+    
+Q.2    servers network devices,storage devices and other computer equipmenting fall under which category of infrastructure
+
+ANS~~ "Hardware Infrastructure" or "Infrastructure"
+
+============================================================================================================================================================
+
+
+Q.3    Operating system fall under which category of infrastructure
+       
+ANS~~  Software Infrastructure
+
+============================================================================================================================================================
+
+Q.4     _______ infrastructure connect various components and devices and enable communication and data transfer.
+
+ANS~~   NETWORK Infrastructure
+
+============================================================================================================================================================
+
+Q.5    give few examples of netwroking infrastructure____________
+
+ANS~~   Routers
+        Switches
+	Wireless Access Points (WAPs)
+	Network Cables
+
+
+============================================================================================================================================================
+
+Q.6    under which infrastructure do you consider storage capcity , redundancy ,backup & data retrieval
+ 
+ANS~~  DATA storage
+
+============================================================================================================================================================
+
+Q.7   window , mac and linux are ____________
+
+ANS~~ Operating system
+
+============================================================================================================================================================
+
+Q.8    what are virtual machine and under which category of infrastructure do they fall
+
+ANS~~   A virtual machine (VM) is a software emulation of a physical computer, allowing multiple operating systems (OS) or instances to run on a single                  	physical machine. Each virtual machine acts as an independent entity with its own virtual hardware, including virtual CPU, memory, storage, and 	network interfaces.
+
+
+         Virtual machines fall under the category of "Virtualization Infrastructure
+
+============================================================================================================================================================
+
+Q.9	 ______infrastrucure is essential to protect data & resources from unauthorized access , data breach and cyber attack
+ 	
+
+ANS~~ 	 Security infrastructure OR cybersecurity infrastructure
+  
+============================================================================================================================================================
+
+10 how do we prevent above attcks and what are the differnet options available
+
+
+============================================================================================================================================================
+
+Q11	 _________is very important for smooth opertaions and identifying potential issues
+
+ANS~~   Monitoring and management 
+
+============================================================================================================================================================
+
+Q.12      Managing patches and updates falls under______
+
+ANS~~      IT operations and system management
+
+============================================================================================================================================================
+
+Q.13  three different services provided by cloud_______
+
+ANS~~ Iaas, Paas, Saas
+
+============================================================================================================================================================
+
+Q.14  different types of cloud models_____________
+
+ANS~~ Public private hybrid
+
+============================================================================================================================================================
+
+Q.15 list the infrastructure issues_____
+
+ANS~~
+
+============================================================================================================================================================
+
+16 LOAD BALANCING AND CLUSTER ARE USED FOR ADDRESSING WHICH ISSUE
+
+============================================================================================================================================================
+
+17 HOW DO YOU CREATE A RELIANT AND reliable STRUCTURE
+
+============================================================================================================================================================
+
+18 ITIL CERTIFICATION IS FOR ____ AND WHAT ARE THE DIIFERNT LEVELS AT ITIL CERTIFICATE__________
+IT service management
+
+============================================================================================================================================================
+
+19 WHAT ARE THE TWO DIFFERNT CERTIFICATE FOR NETWORKING AND WHICH one DEALS WITH ROUTER & SWITCHES_________
+CCNA- routers ans switches
+CCNP
+
+============================================================================================================================================================
+
+20 WHICH CERTIFICATE OF AZURE IS FOR INFRASTRUCTURE MANAGEMENT__________
+
+============================================================================================================================================================
+
+21 IS PMP IS FOCUSED ON IT INFRASTRUCTRE MANAGEMENT(Y/N)
+
+============================================================================================================================================================
+
+22 CERTIFICATION FOR INFORMATION SECURITY PROFESSIONALS__________
+
+
+============================================================================================================================================================
+
+23 list the learning path for certifications_____________ 
+
+============================================================================================================================================================

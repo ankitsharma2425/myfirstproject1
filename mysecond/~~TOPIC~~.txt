@@ -1,0 +1,16 @@
+~~TOPIC~~
+
+1.Infrastructure 
+2.issues with Infrastructure 
+3.different training available
+Funda
+Operating system is very important because it allow us to communicate between hardware and software
+create virtual machine in cloud and can have access data
+cloud offers these things to us.
+infrastructure as a service
+platform as a service
+software as a service
+=============================================================================================================================================================
+disaster recovery-
+challenges-
+scalablity- the moment we incres

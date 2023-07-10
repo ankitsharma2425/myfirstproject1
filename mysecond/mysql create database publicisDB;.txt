@@ -1,0 +1,118 @@
+mysql> create database publicisDB;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> use publicisDB;
+Database changed
+mysql> create table designation(desgid int primary key,desgname varchar(60),desgdesc varchar(60));
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> create table role(roleid int primary key,rolename varchar(60),roledesc varchar(60));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> create table employee(Employee_Id int primary key,First_Name varchar(36),Last_Name varchar(20),Sur_Name varchar(20),DOJ varchar(20),DOB varchar(20),Qualification varchar(20),Address varchar(100),Contact_Number int,desgid int,FOREIGN KEY (desgid) REFERENCES Designation(desgid),roleid int,FOREIGN KEY (roleid) REFERENCES Role(roleid));
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> insert into designation values(1,'Associate','Associate');
+Query OK, 1 row affected (0.04 sec)
+
+mysql> insert into designation values(2,'Senior Associate','Senior Associate');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(3,'Lead Consultant','Lead Consultant');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(4,'Senior Consultant','Senior Consultant');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(5,'Associate Managing Consultant','Associate Managing Consultant');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(6,'Managing Consultant','Managing Consultant');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(7,'Principle Consultant','Principle Consultant');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(8,'Vice President','Vice President');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(9,'Senior Vice President','Senior Vice President');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(10,'CEO','CEO');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into designation values(11,'Managing Director','Managing Consultant');
+Query OK, 1 row affected (0.04 sec)
+
+mysql> insert into role values(1,'Software Engineer','Software Engineer');
+Query OK, 1 row affected (0.04 sec)
+
+mysql> insert into role values(2,'Senior Software Engineer','Senior Software Engineer');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into role values(3,'Lead Consultant','Lead Consultant');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into role values(4,'Team Lead','Team Lead');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into role values(5,'Business Analyst','Business Analyst');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into role values(6,'Technology Specialist','Technology Specialist');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into role values(7,'Software Manager','Software Manager');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Employee values(1,'xxx','yyy','xxy',str_to_date('10-7-2011','%e-%c-%Y'),str_to_date('15-02-1986','%e-%c-%Y'),'B.Tech','abcd',84454545,2,1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql>
+mysql> insert into Employee values(2,'xyz','yzx','yxv',str_to_date('15-2-2010','%e-%c-%Y'),str_to_date('21-07-1984','%e-%c-%Y'),'M.C.A','wewr',87564523,3,2);
+Query OK, 1 row affected (0.00 sec)
+
+mysql>
+mysql> insert into Employee values(3,'bcd','tys','yuo',str_to_date('15-3-2011','%e-%c-%Y'),str_to_date('12-12-1982','%e-%c-%Y'),'B.Tech','wewe',88564552,2,3)
+    -> select * from employee;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select * from employee' at line 2
+mysql> select * from employee;
++-------------+------------+-----------+----------+------------+------------+---------------+---------+----------------+--------+--------+
+| Employee_Id | First_Name | Last_Name | Sur_Name | DOJ        | DOB        | Qualification | Address | Contact_Number | desgid | roleid |
++-------------+------------+-----------+----------+------------+------------+---------------+---------+----------------+--------+--------+
+|           1 | xxx        | yyy       | xxy      | 2011-07-10 | 1986-02-15 | B.Tech        | abcd    |       84454545 |      2 |      1 |
+|           2 | xyz        | yzx       | yxv      | 2010-02-15 | 1984-07-21 | M.C.A         | wewr    |       87564523 |      3 |      2 |
++-------------+------------+-----------+----------+------------+------------+---------------+---------+----------------+--------+--------+
+2 rows in set (0.00 sec)
+
+mysql> select * from designation;
++--------+-------------------------------+-------------------------------+
+| desgid | desgname                      | desgdesc                      |
++--------+-------------------------------+-------------------------------+
+|      1 | Associate                     | Associate                     |
+|      2 | Senior Associate              | Senior Associate              |
+|      3 | Lead Consultant               | Lead Consultant               |
+|      4 | Senior Consultant             | Senior Consultant             |
+|      5 | Associate Managing Consultant | Associate Managing Consultant |
+|      6 | Managing Consultant           | Managing Consultant           |
+|      7 | Principle Consultant          | Principle Consultant          |
+|      8 | Vice President                | Vice President                |
+|      9 | Senior Vice President         | Senior Vice President         |
+|     10 | CEO                           | CEO                           |
+|     11 | Managing Director             | Managing Consultant           |
++--------+-------------------------------+-------------------------------+
+11 rows in set (0.00 sec)
+
+mysql> select * from role;
++--------+--------------------------+--------------------------+
+| roleid | rolename                 | roledesc                 |
++--------+--------------------------+--------------------------+
+|      1 | Software Engineer        | Software Engineer        |
+|      2 | Senior Software Engineer | Senior Software Engineer |
+|      3 | Lead Consultant          | Lead Consultant          |
+|      4 | Team Lead                | Team Lead                |
+|      5 | Business Analyst         | Business Analyst         |
+|      6 | Technology Specialist    | Technology Specialist    |
+|      7 | Software Manager         | Software Manager         |
++--------+--------------------------+--------------------------+
